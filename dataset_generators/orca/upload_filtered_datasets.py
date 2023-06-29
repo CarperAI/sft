@@ -34,7 +34,6 @@ def data_to_columns(data_path, task_name:str):
 
 
 if __name__ == '__main__':
-    # alpaca = load_dataset("orca-chatgpt-50k", "train")
     data = list()
     data.extend(data_to_columns('cot_outputs_filtered.json', 'cot'))
     data.extend(data_to_columns('niv_outputs_filtered.json', 'niv'))

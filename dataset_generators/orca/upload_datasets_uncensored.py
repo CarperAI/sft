@@ -51,17 +51,4 @@ if __name__ == '__main__':
         "orca-chatgpt-50k-uncensored", private=True)
     chatgpt.save_to_disk('orca-chatgpt-50k-uncensored')
 
-    # data = list()
-    # data.extend(data_to_columns('cot_outputs_gpt4.json', 'cot'))
-    # data.extend(data_to_columns('niv_outputs_gpt4.json', 'niv'))
-    # data.extend(data_to_columns('flan_outputs_gpt4.json', 'flan'))
-    # data.extend(data_to_columns('t0_outputs_gpt4.json', 't0'))
-    # shuffle(data)
-    # gpt4 = Dataset.from_list(data, split=Split.TRAIN)
-    # # gpt4 = gpt4.map(tokenization, batched=True)
-    # # print(gpt4.column_names)
-    # # gpt4 = gpt4.filter(lambda x: x['input_len'] < 2048)
-    # gpt4.push_to_hub(
-    #     "orca-gpt4-10k-uncensored", private=True)
-    # gpt4.save_to_disk('orca-gpt4-10k-uncensored')
 
